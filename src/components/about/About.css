@@ -65,7 +65,27 @@
     color:var(--color-light)
 }
 
+/* Intersection Observer*/
 
+.slide-left{
+    transform: translateX(65%)
+}
+
+.slide-right{
+    transform: translateX(-65%)
+}
+
+.slide-left, 
+.slide-right {
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.slide-left.appear, 
+.slide-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
 
 /* Media Queries */
 

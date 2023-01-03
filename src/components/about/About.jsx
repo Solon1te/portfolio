@@ -3,6 +3,7 @@ import './About.css'
 import {BiCodeAlt} from 'react-icons/bi'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import Phoenix from '../../assets/Phoenix.png'
+import './Intersection_Observer'
 
 const About = () => {
   return (
@@ -11,12 +12,12 @@ const About = () => {
     <h5>What You Should Know</h5>
 
     <div className="container about__container">
-        <div className="about__me">
+        <div className="about__me slide-right slide-in">
             <div className="about__me-image">
                 <img src={Phoenix} alt="phoenix"/>
             </div>
         </div>
-        <div className="about__content">
+        <div className="about__content slide-left slide-in">
             <div className="about__cards">
                 <article className='about__card'>
                     <BiCodeAlt className='about__icon'/>
