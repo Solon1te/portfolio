@@ -1,23 +1,33 @@
 import React from 'react'
+import { useRef, useEffect, useState } from 'react'
 import './About.css'
 import {BiCodeAlt} from 'react-icons/bi'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import Phoenix from '../../assets/Phoenix.png'
-import './Intersection_Observer'
 
 const About = () => {
+    const myRef = useRef();
+    const [IsVisible, setIsVisible] = useState();
+    console.log('IsVisible', IsVisible);
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setIsVisible(entry.isIntersecting)
+      })
+      observer.observe(myRef.current);
+    }, [])
   return (
    <section id='about'>
     <h2>About Me...</h2>
     <h5>What You Should Know</h5>
 
     <div className="container about__container">
-        <div className="about__me slide-right slide-in">
+        <div ref={myRef} className="about__me slide-in slide-right">
             <div className="about__me-image">
                 <img src={Phoenix} alt="phoenix"/>
             </div>
         </div>
-        <div className="about__content slide-left slide-in">
+        <div ref={myRef} className={`about__content slide-in slide-left ${IsVisible ? About.appear : ''}`}>
             <div className="about__cards">
                 <article className='about__card'>
                     <BiCodeAlt className='about__icon'/>
