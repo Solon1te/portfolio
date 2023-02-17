@@ -1,33 +1,25 @@
 import React from 'react'
-import { useRef, useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer';
 import './About.css'
 import {BiCodeAlt} from 'react-icons/bi'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import Phoenix from '../../assets/Phoenix.png'
 
 const About = () => {
-    const myRef = useRef();
-    const [IsVisible, setIsVisible] = useState();
-    console.log('IsVisible', IsVisible);
-    useEffect(() => {
-      const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setIsVisible(entry.isIntersecting)
-      })
-      observer.observe(myRef.current);
-    }, [])
+    const { ref: myRef, inView: IsVisible } = useInView();
+    console.log('IsVisible', IsVisible);  
   return (
    <section id='about'>
     <h2>About Me...</h2>
     <h5>What You Should Know</h5>
 
     <div className="container about__container">
-        <div ref={myRef} className="about__me slide-in slide-right">
+        <div ref={myRef} className={`about__me slide-in slide-right ${IsVisible ? 'appear': ''}`}>
             <div className="about__me-image">
                 <img src={Phoenix} alt="phoenix"/>
             </div>
         </div>
-        <div ref={myRef} className={`about__content slide-in slide-left ${IsVisible ? About.appear : ''}`}>
+        <div ref={myRef} className={`about__content slide-in slide-left ${IsVisible ? 'appear' : ''}`}>
             <div className="about__cards">
                 <article className='about__card'>
                     <BiCodeAlt className='about__icon'/>
