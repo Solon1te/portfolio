@@ -1,21 +1,24 @@
+
 .about__container {
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
 }
 
+.title {
+    text-shadow: var(--color-bg) 1px 0 10px;
+}
+
 .about__me {
     width: 130%;
     aspect-ratio: 1/1;
-    background: linear-gradient(
-        135deg,
-        transparent,
-        var(--color-light),
-        transparent
-    );
+    position:relative;
     display:grid;
     place-items: center;
     border-radius: 0.5rem;
+    left: 12rem;
+    bottom: 8rem;
+    z-index: -1;
 }
 
 .about__me-image {
@@ -32,18 +35,13 @@
 
 .about__card {
     background: var(--color-bg-alt);
-    border: 1px solid transparent;
+    border: 1px solid white;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition);   
 }
 
-.about__card:hover {
-    background: transparent;
-    border-color: var(--color-main-alt);
-    cursor: pointer;
-}
 
 .about__icon {
     color: var(--color-main);
@@ -94,8 +92,11 @@
         gap: 0;
     }
     .about__me {
-        width:50%;
+        width:30%;
         margin: 2rem auto 4rem;
+        position: relative;
+        left: 0rem;
+        bottom: 0rem;
     }
 
     .about__content p { 
@@ -106,7 +107,7 @@
 
 @media  screen and (max-width: 600px) {
     .about__me {
-        width: 65%;
+        width: 40%;
         margin: 0 auto 3rem;
     }
 

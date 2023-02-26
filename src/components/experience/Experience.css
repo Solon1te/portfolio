@@ -1,56 +1,74 @@
+#experience {
+    background-color: var(--color-white
+    );
+    padding: 1rem 0rem 5rem;
+}
+
+#experience > h2 {
+    color: var(--color-bg)
+}
 
 .experience__container {
-    background: var(--color-main);
+    width: var(--container-width-lg);
     padding: 3.4rem 3rem;
+    border: 1px solid white;
     border-radius: 2rem;
-    border: 1px solid var(--color-white);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:2rem;
-    margin-bottom: 15rem;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
 }
 
 .experience__container > article {
+    width: 12rem;
+    height: 3rem;
     background-color: var(--color-bg-alt);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 2rem 0rem;
+    justify-content: center;
     border-radius: 1.4rem;
+    margin: 2rem 1rem;
+    border: 1px solid var(--color-bg)
+}
+
+.skillBadge {
+    position:relative;
+    border: 1px solid var(--color-main-alt);
+    bottom: 2.5rem;
+    right: 2rem;
+    height: 75px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    box-shadow: 6px 5px 15px var(--color-bg);
+    background-color: var(--color-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .experience__container__icon {
-    color: var(--color-white);
-    font-size: 4rem;
+    color: var(--color-bg);
+    font-size: 2.7rem;
+}
+
+.experience__container > article > h3 {
+    color:var(--color-white);
+    position: relative;
+    right: 2rem;
+
 }
 
 .experience__container > article > h4 {
-    font-size: .85rem;
-    color:var(--color-light)
+    color:var(--color-light);
+    position: relative;
+    bottom: 2rem;
 
 }
 
 #experience {
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
 }
 
-
-/* Animation */
-
-@keyframes bounce {
-    0%   { transform: scale(1,1) translateY(0); }
-    10%  { transform: scale(1.1,.9) translateY(0); }
-    30%  { transform: scale(.9,1.1)   translateY(-25px);}
-    50%  { transform: scale(1.05,.95) translateY(0); }
-    58%  { transform: scale(1,1) translateY(-7px); }
-    65%  { transform: scale(1,1) translateY(0);}
-    100% { transform: scale(1,1) translateY(0);}
-}
-
-.experience:hover {
-animation: bounce 1.5s ease;
-animation-fill-mode: forwards;
-}
 
 /*Media Queries*/
 

@@ -3,15 +3,14 @@ import { useInView } from 'react-intersection-observer';
 import './About.css'
 import {BiCodeAlt} from 'react-icons/bi'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
-import Phoenix from '../../assets/Phoenix.png'
+import Phoenix from '../../assets/Phoenixblue.png'
 
 const About = () => {
     const { ref: myRef, inView: IsVisible } = useInView();
     console.log('IsVisible', IsVisible);  
   return (
    <section id='about'>
-    <h2>About Me...</h2>
-    <h5>What You Should Know</h5>
+    <h2 className='title'>About Me...</h2>
 
     <div className="container about__container">
         <div ref={myRef} className={`about__me slide-in slide-right ${IsVisible ? 'appear': ''}`}>

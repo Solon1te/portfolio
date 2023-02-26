@@ -1,5 +1,5 @@
 #portfolio {
-    margin-bottom: 43rem;
+    margin-bottom: 25rem;
 }
 
 .portfolio__container {
@@ -25,9 +25,9 @@
     background: transparent;
 }
 
-.portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
+.portfolio__item > img {
+    width: 7rem;
+    margin-bottom: 3rem;
 }
 
 .portfolio__item h3 {

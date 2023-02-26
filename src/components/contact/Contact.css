@@ -21,12 +21,17 @@
     transition: (--transition);
 }
 
+.contact__option > h4, h5 {
+    color:var(--color-white)
+}
+
 .contact__option:hover {
     background: transparent;
     border-color: var(--color-main-alt);
 }
 
 .contact__option-icon {
+    color: var(--color-light);
     font-size: 1.5rem;
     margin-bottom: .5rem;   
 }
