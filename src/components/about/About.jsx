@@ -6,11 +6,10 @@ import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import Phoenix from '../../assets/Phoenixblue.png'
 
 const About = () => {
-    const { ref: myRef, inView: IsVisible } = useInView();
-    console.log('IsVisible', IsVisible);  
+    const { ref: myRef, inView: IsVisible } = useInView(); 
   return (
    <section id='about'>
-    <h2 className='title'>About Me...</h2>
+    <h2 className='title'>About Me</h2>
 
     <div className="container about__container">
         <div ref={myRef} className={`about__me slide-in slide-right ${IsVisible ? 'appear': ''}`}>

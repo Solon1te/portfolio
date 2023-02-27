@@ -1,7 +1,7 @@
 
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 25% 50%;
     gap: 15%;
 }
 
@@ -34,8 +34,6 @@
 }
 
 .about__card {
-    background: var(--color-bg-alt);
-    border: 1px solid white;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
