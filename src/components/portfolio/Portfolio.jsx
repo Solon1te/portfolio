@@ -3,7 +3,7 @@ import './Portfolio.css'
 import tetris from '../../assets/Tetris.png'
 import calculator from '../../assets/calculator.png'
 import spotify from '../../assets/Spotify.png'
-import portfolio from '../../assets/portfolio.png'
+import portfolio from '../../assets/Phoenixblue.png'
 
 const Portfolio = () => {
   return (
@@ -15,25 +15,25 @@ const Portfolio = () => {
           <div className="portfolio__item__image"></div>
           <h3>Tetris</h3>
           <img src={tetris} alt="" />
-          <a href="https://github.com/Solon1te/Tetris" className='btn' target='blank'>Github</a>
+          <a href="https://github.com/Solon1te/Tetris" className='btn' target='blank'>Repository</a>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item__image"></div>
           <h3>Personal Portfolio</h3>
           <img src={portfolio} alt="" />
-          <a href="https://github.com/Solon1te/Personal_portfolio" className='btn' target='blank'>Github</a>
+          <a href="https://github.com/Solon1te/Personal_portfolio" className='btn' target='blank'>Repository</a>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item__image"></div>
           <h3>Calculator</h3>
           <img src={calculator} alt="" />
-          <a href="https://github.com/Solon1te/Calculator" className='btn' target='blank'>Github</a>
+          <a href="https://github.com/Solon1te/Calculator" className='btn' target='blank'>Repository</a>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item__image"></div>
           <h3>Spotify Playlist API</h3>
           <img src={spotify} alt="" />
-          <a href="https://github.com/Solon1te/Tetris" className='btn' target='blank'>Github</a>
+          <a href="https://github.com/Solon1te/Tetris" className='btn' target='blank'>Repository</a>
         </article>
       </div>
     </section>

@@ -4,7 +4,7 @@ import {BiHome , BiQuestionMark, BiPhone} from 'react-icons/bi'
 import {BsBriefcase, BsGear} from 'react-icons/bs'
 import { useState } from 'react'
 
-const Nav = () => {
+/*const Nav = () => {
     const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
@@ -17,4 +17,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default Nav*/

@@ -1,7 +1,7 @@
 #experience {
     background-color: var(--color-white
     );
-    padding: 1rem 0rem 5rem;
+    padding: 1rem 0rem 1.3rem;
 }
 
 #experience > h2 {
@@ -33,7 +33,6 @@
 
 .skillBadge {
     position:relative;
-    border: 1px solid var(--color-main-alt);
     bottom: 2.5rem;
     right: 2rem;
     height: 75px;
@@ -44,6 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
 }
 
 .experience__container__icon {
