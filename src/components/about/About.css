@@ -104,14 +104,15 @@
     .about__content p { 
         margin: 1rem 0 1.5rem;
     }
+    
     /*tablet & phone intersection observer*/
     .slide-left{
-        transform: translateX(20%);
+        transform: translateY(50%);
         
     }
     
     .slide-right{
-        transform: translateX(-20%);
+        transform: translateY(-50%);
         
     }
 
