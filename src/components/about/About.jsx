@@ -32,10 +32,16 @@ const About = () => {
                 </article>
             </div>
             <p>
-                I began coding in my second job as a machine operator at the age of 23. I have always enjoyed the constant learning and challenges that coding
-                has put before me. In January 2022 I decided to expand my skills and began learning javascript and React.js on Codecademy. I currently specialize
-                in front-end development but I am always looking to pick up new skills and experience. If you have a project or a job opening you would like to 
-                discuss I would be excited to talk with you.
+            Hi there! I'm Mark, a front-end developer with a passion for coding. I first discovered my love for programming when I was working as a machine operator in my second job at the age of 23. Since then, I've been hooked on the constant learning and challenges that coding presents.
+            <br />
+            <br />
+            In January 2022, I decided to expand my skillset and began learning JavaScript and React.js on Codecademy. Since then, I've been honing my front-end development skills and working on various projects to gain hands-on experience.
+            <br />
+            <br />
+            My current specialization is in front-end development, but I'm always looking to pick up new skills and experiences. Whether it's learning a new framework or diving deeper into UX design, I'm always eager to expand my knowledge and grow as a developer.
+            <br />
+            <br />
+            If you're looking for a passionate and dedicated front-end developer to join your team or collaborate on a project, I would be thrilled to chat with you. Let's work together to create amazing web experiences that captivate and engage users!
                 <br>
                 </br>
                 <br/>
