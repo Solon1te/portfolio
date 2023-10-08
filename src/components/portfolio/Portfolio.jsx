@@ -16,6 +16,7 @@ const Portfolio = () => {
           <h3>Tetris</h3>
           <img src={tetris} alt="" />
           <a href="https://github.com/Solon1te/Tetris" className='btn' target='blank'>Repository</a>
+          <a href="dazzling-halva-e3e6c2" className='btn-primary' target='blank'>Play</a>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item__image"></div>
